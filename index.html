@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather application</title>
+    <title>Weather Application</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-200 max-w-md mx-auto">
-    <div class="max-w-md mx-auto ">
-    <h1 class="bg-gray-500 text-white font-bold p-6 mt-2 mb-2 text-center rounded text-xl">Weather app</h1>
-    <input type ="text" class="border border-gray-300 w-full mb-4 mt-14 p-2" id="cityinput" placeholder="Enter the city name">
-    <button id="startbtn" class="bg-yellow-500 w-full text-center p-4 rounded mb-2">Get Started</button>
-    <div id="Weather_info" class="flex items-center flex-col font-bold">
-        <ul id="info_list">
-
-        </ul>
+    <div class="bg-white shadow-md rounded-lg p-6 mt-10">
+        <h1 class="bg-gray-500 text-white font-bold p-6 rounded text-center text-2xl">Weather App</h1>
+        <input type="text" class="border border-gray-300 w-full mb-4 mt-6 p-2 rounded" id="cityinput" placeholder="Enter the city name">
+        <button id="startbtn" class="bg-yellow-500 w-full text-center p-4 rounded hover:bg-yellow-600 transition duration-200">Get Weather</button>
+        <div id="Weather_info" class="flex items-center flex-col font-bold mt-4">
+            <ul id="info_list" class="list-disc pl-5 text-gray-700"></ul>
+        </div>
     </div>
-    </div>
+    <footer class="bg-gray-500 text-white text-center p-4 mt-10 rounded-lg">
+        <p class="text-sm">© 2024 Weather App. All rights reserved.</p>
+        <p class="text-xs">Built with ♥</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
